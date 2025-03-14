@@ -1,0 +1,49 @@
+.pencil {
+  color: white;
+  border-radius: 5rem;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
+  background-color: black;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+  width: 18%;
+  text-align: center;
+}
+
+.transparent-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #808080;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease, border 0.2s ease;
+}
+
+.transparent-checkbox:checked {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid #808080;
+}
+
+.transparent-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 11px;
+  width: 6px;
+  height: 12px;
+  border: solid #808080;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  color: #808080;
+}
+
+.transparent-checkbox:focus {
+  outline: none;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+
+    <link
+      rel="stylesheet"
+      href="../css - scss/scss bootstrap/custom-bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="../css - scss/profile.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-secondary">
+    <header>
+      <img
+        src="../img/netflix_logo.png"
+        alt="netflix_logo"
+        width="125px"
+        class="m-2"
+      />
+    </header>
+
+    <main class="d-flex justify-content-center align-items-center mt-5">
+      <div>
+        <h1 class="border-bottom text-white pb-2">Edit Profile</h1>
+
+        <!-- profile info -->
+        <div class="d-flex justify-content-start border-bottom">
+          <div class="mt-4 w-25 h-75 position-relative" id="userAvatar">
+            <img src="../img/avatar.png" alt="avatar" class="w-100" />
+            <i class="bi bi-pencil-fill pencil"></i>
+          </div>
+
+          <div class="container ms-2">
+            <div class="d-flex flex-column ms-3">
+              <input
+                class="text-white bg-tertiary border-0 p-2 pe-5 mt-4"
+                type="text"
+                placeholder="Username"
+              />
+
+              <label for="language" class="text-white mt-4">Language:</label>
+              <select
+                name="language"
+                id="languageMenu"
+                class="bg-black text-white border-2 mt-1 pe-1 w-40 p-1"
+              >
+                <option value="language1">English</option>
+                <option value="language2">Italiano</option>
+                <option value="language4">Español</option>
+                <option value="language5">Français</option>
+                <option value="language6">Deutsch</option>
+                <option value="language7">日本語</option>
+                <option value="language8">中文（简体</option>
+                <option value="language9">한국인</option>
+              </select>
+
+              <div class="border-top mt-3">
+                <h5 class="text-white pb-2 fs-5 pt-4">Maturity Settings</h5>
+                <button class="bg-tertiary text-white p-1">
+                  ALL MATURITY RATINGS
+                </button>
+
+                <p class="text-white mt-3">
+                  Show titles of all maturity ratings for this profile.
+                </p>
+
+                <button class="bg-transparent border p-1 px-4 mb-4 text-white">
+                  EDIT
+                </button>
+              </div>
+
+              <div class="mb-5">
+                <h5 class="text-white pb-2 fs-5 pt-4">Autoplay Controls</h5>
+                <label class="text-white d-flex align-content-center">
+                  <input type="checkbox" class="transparent-checkbox" />
+                  <span class="ms-2"
+                    >Autoplay next episode in a series on all devices.</span
+                  >
+                </label>
+
+                <label class="text-white d-flex align-content-center mt-2">
+                  <input type="checkbox" class="transparent-checkbox" />
+                  <span class="ms-2"
+                    >Autoplay previews while browsing on all devices.</span
+                  >
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- save button -->
+        <div>
+          <button
+            class="bg-white border p-1 px-4 mb-4 text-secondary mt-4 me-3 w-30"
+          >
+            SAVE
+          </button>
+
+          <button
+            class="bg-transparent border p-1 px-4 mb-4 text-white mt-4 me-3 w-30"
+          >
+            CANCEL
+          </button>
+
+          <button
+            class="bg-transparent border p-1 px-4 mb-4 text-white mt-4 me-3 w-30"
+          >
+            DELETE PROFILE
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+@import "functions";
+@import "variables";
+@import "bootstrap/scss/mixins";
+
+// new colors
+$primary: #db0000;
+$secondary: #141414;
+$tertiary: #808080;
+$forth: #3b3b3b;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "forth": $forth
+);
+$theme-colors: map-merge($theme-colors, $colors);
+
+// new widths
+@for $i from 5 through 100 {
+    @if $i % 5==0 {
+        .w-#{$i} {
+            width: #{$i}+'%';
+        }
+    }
+}
+
+// new navbar
+.nav-item {
+    font-size: 0.8rem;
+}
+
+// new searchbar
+.bi-search,
+.bi-bell-fill {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: white !important;
+}
+
+// new dropdown
+.dropdown-menu {
+    color: white !important; 
+    background-color: $tertiary !important; 
+
+    .dropdown-item {
+        color: white !important;
+    }
+}
+
+@import "bootstrap"
