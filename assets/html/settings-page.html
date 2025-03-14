@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+
+    <link
+      rel="stylesheet"
+      href="../css - scss/scss bootstrap/custom-bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="../css - scss/profile.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="bg-secondary">
+      <nav class="navbar navbar-expand-lg bg-secondary mx-4">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <img
+            class="logo me-4"
+            src="../img/netflix_logo.png"
+            alt="netflix_logo"
+            width="125px"
+          />
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white fw-bold"
+                  aria-current="page"
+                  href="#"
+                  >TV Shows</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Movies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" aria-disabled="true"
+                  >Recently Added</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" aria-disabled="true"
+                  >My List</a
+                >
+              </li>
+            </ul>
+
+            <!-- barra di ricerca -->
+            <nav class="navbar bg-secondary d-none" id="search-input">
+              <div class="container-fluid">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control text-white bg-secondary"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn text-white bg-primary ms-2" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </nav>
+
+            <div
+              class="d-flex align-items-center justify-content-around w-10 me-5 mb-2 mb-lg-0"
+            >
+              <i class="bi bi-search text-white" id="search-btn"></i>
+
+              <a class="nav-link text-white" href="#" aria-disabled="true"
+                >KIDS</a
+              >
+              <i class="bi bi-bell-fill text-white"></i>
+
+              <!-- Menu utente a tendina -->
+              <div class="dropdown w-15 p-0">
+                <button
+                  class="btn btn-secondary dropdown-toggle p-0"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/avatar.png" alt="avatar" class="w-100" />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <button class="dropdown-item" type="button" id="profile">
+                      Profile
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button" id="settings">
+                      Settings
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item"
+                      type="button"
+                      id="switchProfile"
+                    >
+                      Switch Profile
+                    </button>
+                  </li>
+                  <li>
+                    <button class="dropdown-item" type="button" id="logout">
+                      Logout
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex justify-content-center align-items-center mt-5">
+      <div class="container">
+        <h1 class="border-bottom pb-2">Account</h1>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

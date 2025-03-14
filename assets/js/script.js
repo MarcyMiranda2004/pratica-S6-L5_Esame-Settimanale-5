@@ -11,4 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("profile").addEventListener("click", () => {
     window.location.href = "/assets/html/profile-page.html";
   });
+
+  // vai alla setting page
+  document.getElementById("settings").addEventListener("click", () => {
+    window.location.href = "/assets/html/settings-page.html";
+  });
 });
